@@ -1,9 +1,8 @@
 package handlers
 
 import (
-	"telegram-bot-api/src/services"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"telegram-bot-api/src/services"
 )
 
 func Callbacks(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
