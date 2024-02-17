@@ -35,7 +35,7 @@ func Init() *gorm.DB {
 	}
 
 	// Migrate tables
-	DB.AutoMigrate(&models.Task{})
+	DB.AutoMigrate(&models.Member{})
 
 	return DB
 }
