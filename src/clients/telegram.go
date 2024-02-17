@@ -3,9 +3,8 @@ package clients
 import (
 	"log"
 
-	"telegram-bot-api/config"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"telegram-bot-api/config"
 )
 
 func Init() *tgbotapi.BotAPI {
