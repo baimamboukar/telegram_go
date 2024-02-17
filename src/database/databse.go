@@ -20,11 +20,11 @@ func Init() *gorm.DB {
 		log.Fatal(err)
 	}
 
-	if err := DB.Exec("DROP DATABASE IF EXISTS todolist;").Error; err != nil {
+	if err := DB.Exec("DROP DATABASE IF EXISTS welms;").Error; err != nil {
 		panic(err)
 	}
 
-	if err := DB.Exec("CREATE DATABASE todolist").Error; err != nil {
+	if err := DB.Exec("CREATE DATABASE welms").Error; err != nil {
 		panic(err)
 	}
 
