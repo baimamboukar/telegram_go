@@ -3,12 +3,11 @@ package repositories
 import (
 	"time"
 
-	"telegram-bot-api/src/models"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"telegram-bot-api/src/models"
 )
 
-func SetTask(update tgbotapi.Update) error {
+func CreateMember(update tgbotapi.Update) error {
 	member := models.Member{
 		FullName: update.Message.AuthorSignature,
 		SocialMedia: map[string]string{

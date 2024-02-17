@@ -1,15 +1,16 @@
 package handlers
 
 import (
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"telegram-bot-api/src/services"
+
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 func Callbacks(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	cmd, taskId := "lol", "lol"
 	//utils.GetKeyValue(update.CallbackQuery.Data)
 	switch {
-	case cmd == "delete_task":
-		services.DeleteTaskCallback(bot, update, taskId)
+	case cmd == "detele_member":
+		services.DeleteMemberCallBack(bot, update, taskId)
 	}
 }

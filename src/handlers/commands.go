@@ -9,11 +9,11 @@ func Commands(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 	switch update.Message.Command() {
 	case "start":
 		services.Start(bot, update)
-	case "set_todo":
-		services.SetTask(bot, update)
-	case "delete_todo":
-		services.DeleteTask(bot, update)
-	case "show_all_todos":
-		services.ShowAllTasks(bot, update)
+	case "create_member":
+		services.CreateMemberCallback(bot, update)
+	case "delete_member":
+		services.DeleteMember(bot, update)
+	case "get_all_members":
+		services.GetAllMembers(bot, update)
 	}
 }
