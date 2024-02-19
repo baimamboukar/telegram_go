@@ -3,9 +3,8 @@ package repositories
 import (
 	"time"
 
-	"telegram-bot-api/src/models"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"telegram-bot-api/src/models"
 )
 
 func CreateMember(update tgbotapi.Update) error {

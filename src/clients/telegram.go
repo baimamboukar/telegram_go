@@ -8,6 +8,7 @@ import (
 )
 
 func Init() *tgbotapi.BotAPI {
+
 	bot, err := tgbotapi.NewBotAPI(config.Config("TELEGRAM_APITOKEN"))
 	if err != nil {
 		log.Panic(err)
