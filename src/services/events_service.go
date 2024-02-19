@@ -1,3 +1,5 @@
 package services
 
-func AddEvent() {}
+func AddEvent()    {}
+func EditEvent()   {}
+func DeleteEvent() {}
